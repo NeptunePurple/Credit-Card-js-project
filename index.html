@@ -13,6 +13,8 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" id="desktop-css" href="./style.css" />
+  <link rel="stylesheet" id="mobile-css" href="./stylemobile.css" />
 </head>
 <body>
 
@@ -48,6 +50,45 @@
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
-  <div id="global">Hello</div>
+  <div id="global-parent">
+    
+    <div id="background-left"><img id="gradient-image" src="/images/bg-main-desktop.png"></div>
+    
+    
+    <div id="credit-front"><img src="/images/bg-card-front.png">
+        <img class="logo" src="images/card-logo.svg">
+    </div>
+
+
+    <div id="credit-back"><img src="/images/bg-card-back.png"></div>
+
+    
+    <div id="info-back">
+
+      <form action="">
+        <label for="candhoslder_name">CARDHOLDER NAME</label>
+        <input type="text" id="candhoslder_name" placeholder="Name">
+        <label for="card_number">CARD NUMBER</label>
+        <input type="number" id="card_number" placeholder="number">
+
+        <div class="exp_date_&_cvv">
+          <div>
+            <label for="exp_date">EXP.DATE(MM/YY)</label>
+            <input type="number" id="exp_date" placeholder="MM"  min="0" max="31" minlength="2" maxlength="2">
+            <input type="number" id="exp_date" placeholder="YY"  minlength="4" maxlength="4">
+          </div>
+          <div>
+            <label for="cvv">CVC</label>
+            <input type="number" id="cvv" placeholder="e.g. 123" minlength="3" maxlength="3">
+          </div> 
+        </div>
+        bu
+        
+        
+
+        
+      </form>
+    </div>
+  </div>
 </body>
 </html>
