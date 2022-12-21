@@ -1,3 +1,9 @@
+*{
+    font-family: 'Space Grotesk';
+    letter-spacing: .1vw;
+    /* font-weight: 500; */
+    /* border: 1px solid red; */
+}
 body {
     margin: 0px;
     padding: 0px;
@@ -13,7 +19,6 @@ body {
 #background-left{
     margin-left: 0px;
     margin-top: 0px;
-    /* border: 2px solid red; */
     position: absolute;
 }
 #credit-front{
@@ -21,48 +26,71 @@ body {
     margin-top: 18vh;
     margin-left: 18vh;
 }
+
+#credit-front-image{
+    width:  28vw;
+}
+
+#credit-back-image{
+    width: 28vw;
+}
 #logo{
     position: absolute;
-    margin-top: -29vh;
-    margin-left: 5vh;
+    height: 2.5vw;
+    top: 2.3vw;
+    left: 2.5vw;
 }
  
 #number{
+    position: absolute;
     color: white;
     font-weight: bold;
-    /* Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-    Weights: 500 */
-    /* Font size: 18px */
-    font-family: "Space Grotesk";
-    font-style: "Space Grotesk";
-    margin-top: -10vh;
-    
+    font-size: 2vw;
+    top: 8vw;
+    left: 2vw;
+    display: inline-block;
 }
 #name{
+    position: absolute;
     color: white;
-    margin-left: 4vh;
-    margin-top: 2vh ;
+    top: 12.5vw;
+    left: 2vw;
+    font-size: 0.95vw;
+    display: inline-block;
 }
 #date{
+    position: absolute;
+    display: inline-block;
     color: white;
-    margin-left: 10vh;
-    margin-top: 2vh;
-
+    top: 12.5vw;
+    left: 22vw;
+    font-size: 0.95vw;
 }
 
 #credit-back{
-    /* size: 60%; */
     position: absolute;
     margin-top: 55vh;
     margin-left: 33vh;
 
 }
 
+#cvv{
+    color: white;
+    position: absolute;
+    left:22vw;
+    top: 6.8vw;
+}
+
 
 /* form */
+.info{
+    border-radius: .3vw;
+    color: grey;
+    padding: 2vh;
+
+}
 #info-back {
-    position: absolute;
-   width: 500px;
+    position: absolute;width: 500px;
     margin-left: 800px;
     margin-top: 300px;
 }

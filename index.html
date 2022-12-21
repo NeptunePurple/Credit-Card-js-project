@@ -13,7 +13,7 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <link rel="stylesheet" href="https://fonts.google.com/specimen/Space+Grotesk" >
+  <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
   <link rel="stylesheet" id="desktop-css" href="./style.css" />
   <link rel="stylesheet" id="mobile-css" href="./stylemobile.css" />
 </head>
@@ -57,11 +57,10 @@
     
     
     <div id="credit-front">
-        <div ><img src="/images/bg-card-front.png"></div>
 
-        <div>
-          <img id="logo" src="images/card-logo.svg">
-        </div>
+        <div><img id="credit-front-image" src="/images/bg-card-front.png"></div>
+        <div><img id="logo" src="images/card-logo.svg"></div>
+        
         <div id="number">0000 0000 0000 0000</div>
         <div id="name">JANE APPLESEED</div>
         <div id="date">00/00</div>
@@ -71,30 +70,33 @@
     </div>
 
 
-    <div id="credit-back"><img src="/images/bg-card-back.png"></div>
+    <div id="credit-back">
+      <div><img id="credit-back-image" src="/images/bg-card-back.png"></div>
+      <div id="cvv">000</div>
+    </div>
 
     <!-- carddetails -->
     <div id="info-back">
       <form class="info-card" action="">
         <label for="candhoslder_name">CARDHOLDER NAME</label>
         <br>
-        <input type="text" id="candhoslder_name" placeholder="Name">
+        <input type="text" class="info" id="candholder_name" placeholder="Name">
         <br>
         <label for="card_number">CARD NUMBER</label>
         <br>
-        <input type="number" id="card_number" placeholder="number">
+        <input type="text" inputmode="numeric" class="info" id="card_number" placeholder="number">
         <br>
         <div class="exp_date_cvv">
           <div>
             <label for="exp_date">EXP.DATE(MM/YY)</label>
             <br>
-            <input type="number" class="exp_date_mm" id="exp_date" placeholder="MM"  min="0" max="31" minlength="2" maxlength="2">
-            <input type="number" class="exp_date_yy" id="exp_date" placeholder="YY"  minlength="4" maxlength="4">
+            <input type="text" inputmode="numeric" class="info exp_date_mm" id="exp_date" placeholder="MM"  min="0" max="31" minlength="2" maxlength="2">
+            <input type="text" inputmode="numeric" class="info exp_date_yy" id="exp_date" placeholder="YY"  minlength="4" maxlength="4">
           </div>
           <div>
             <label for="cvv">CVC</label>
             <br>
-            <input type="number" class="cvv_details" id="cvv" placeholder="e.g. 123" minlength="3" maxlength="3">
+            <input type="text" inputmode="numeric" class="info cvv_details" id="cvv" placeholder="e.g.123" minlength="3" maxlength="3">
           </div> 
         </div>
         <button type="submit">Confirm</button>
