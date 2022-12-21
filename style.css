@@ -33,7 +33,21 @@ body {
     /* Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
     Weights: 500 */
     /* Font size: 18px */
-    margin-bottom: ;
+    font-family: "Space Grotesk";
+    font-style: "Space Grotesk";
+    margin-top: -10vh;
+    
+}
+#name{
+    color: white;
+    margin-left: 4vh;
+    margin-top: 2vh ;
+}
+#date{
+    color: white;
+    margin-left: 10vh;
+    margin-top: 2vh;
+
 }
 
 #credit-back{
@@ -52,12 +66,23 @@ body {
     margin-left: 800px;
     margin-top: 300px;
 }
-.exp_date_mm{
+#candhoslder_name,
+#card_number{
+    width: 250px;
+    height: 30px;
+}
+.exp_date_mm,
+.cvv_details{
     width: 40px;
+    height: 30px;
 }
 .exp_date_yy{
     width: 50px;
+    height: 30px;
+    
 }
-.cvv_details{
-    width: 40px;
+.exp_date_cvv{
+    display: flex;
+    column-gap: 20px;
+    
 }
