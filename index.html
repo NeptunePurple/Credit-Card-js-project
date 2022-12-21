@@ -55,38 +55,48 @@
     <div id="background-left"><img id="gradient-image" src="/images/bg-main-desktop.png"></div>
     
     
-    <div id="credit-front"><img src="/images/bg-card-front.png">
-        <img class="logo" src="images/card-logo.svg">
+    <div id="credit-front">
+        <div ><img src="/images/bg-card-front.png"></div>
+
+        <div>
+          <img id="logo" src="images/card-logo.svg">
+        </div>
+        <div id="number">0000 0000 0000 0000</div>
+        <div id="name">JANE APPLESEED</div>
+        <div id="date">00/00</div>
+
+
+
     </div>
 
 
     <div id="credit-back"><img src="/images/bg-card-back.png"></div>
 
-    
+    <!-- carddetails -->
     <div id="info-back">
-
-      <form action="">
+      <form class="info-card" action="">
         <label for="candhoslder_name">CARDHOLDER NAME</label>
+        <br>
         <input type="text" id="candhoslder_name" placeholder="Name">
+        <br>
         <label for="card_number">CARD NUMBER</label>
+        <br>
         <input type="number" id="card_number" placeholder="number">
-
+        <br>
         <div class="exp_date_&_cvv">
           <div>
             <label for="exp_date">EXP.DATE(MM/YY)</label>
-            <input type="number" id="exp_date" placeholder="MM"  min="0" max="31" minlength="2" maxlength="2">
-            <input type="number" id="exp_date" placeholder="YY"  minlength="4" maxlength="4">
+            <br>
+            <input type="number" class="exp_date_mm" id="exp_date" placeholder="MM"  min="0" max="31" minlength="2" maxlength="2">
+            <input type="number" class="exp_date_yy" id="exp_date" placeholder="YY"  minlength="4" maxlength="4">
           </div>
           <div>
             <label for="cvv">CVC</label>
-            <input type="number" id="cvv" placeholder="e.g. 123" minlength="3" maxlength="3">
+            <br>
+            <input type="number" class="cvv_details" id="cvv" placeholder="e.g. 123" minlength="3" maxlength="3">
           </div> 
         </div>
-        bu
-        
-        
-
-        
+        <button type="submit">Confirm</button>
       </form>
     </div>
   </div>

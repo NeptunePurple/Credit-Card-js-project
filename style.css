@@ -19,18 +19,45 @@ body {
 #credit-front{
     position: absolute;
     margin-top: 18vh;
-    margin-left: 10vh;
+    margin-left: 18vh;
+}
+#logo{
+    position: absolute;
+    margin-top: -29vh;
+    margin-left: 5vh;
+}
+ 
+#number{
+    color: white;
+    font-weight: bold;
+    /* Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
+    Weights: 500 */
+    /* Font size: 18px */
+    margin-bottom: ;
 }
 
 #credit-back{
     /* size: 60%; */
     position: absolute;
-    margin-top: 400px;
-    margin-left: 200px;
+    margin-top: 55vh;
+    margin-left: 33vh;
 
 }
-#info-back{
+
+
+/* form */
+#info-back {
     position: absolute;
+   width: 500px;
     margin-left: 800px;
     margin-top: 300px;
+}
+.exp_date_mm{
+    width: 40px;
+}
+.exp_date_yy{
+    width: 50px;
+}
+.cvv_details{
+    width: 40px;
 }
