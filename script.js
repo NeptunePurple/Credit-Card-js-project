@@ -12,24 +12,17 @@ const cardnumber = document.getElementById('number');
 
 formnumber.addEventListener('keyup',function(event){
     // event.target.value==="" ?
-    if(typeof Number(formnumber.value) != 'number')
+    if(typeof Number(event.target.value) !== 'number')
     {
         // const errormessage = document.createElement('p');
         // errormessage.innerText='Wrong Format, Numbers Only';
         // formnumber.appendChild(errormessage);
         // console.log(errormessage);
-        console.log('1st if');
+        console.log('not number');
     }
-    if(typeof Number(formnumber.value) == 'number'){
-        console.log('2nd if');
+    if(typeof Number(event.target.value) == 'number'){
+        console.log('number');
     // cardnumber.innerText = event.target.value;
     }
 })
 
-
-
-
-
-function format(s) {
-    return s.toString().replace(/\d{4}(?=.)/g, "$& ");
-  }
