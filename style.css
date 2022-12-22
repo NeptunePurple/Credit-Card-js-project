@@ -74,7 +74,7 @@ body {
 
 }
 
-#cvv{
+.credit-back-image_cvv{
     color: white;
     position: absolute;
     left:22vw;
@@ -83,34 +83,44 @@ body {
 
 
 /* form */
-.info{
-    border-radius: .3vw;
-    color: grey;
-    padding: 2vh;
-
+*{
+    /* border: 1px solid red; */
 }
 #info-back {
-    position: absolute;width: 500px;
-    margin-left: 800px;
-    margin-top: 300px;
+    position: absolute;
+    top: 35vh;
+    left: 55vw;
 }
-#candhoslder_name,
-#card_number{
-    width: 250px;
-    height: 30px;
+
+.info{
+    padding: 1vh;
+    width: 22vw;
+    border: 1px solid red;
 }
-.exp_date_mm,
+
+
+#cardholder_name, #card_number{
+    height:2.5rem ;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
 .cvv_details{
-    width: 40px;
-    height: 30px;
+    width: 3vw;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.exp_date_mm{
+    width: 3vw;
+    border: 1px solid lightgray;
+    border-radius: 8px;
 }
 .exp_date_yy{
-    width: 50px;
-    height: 30px;
-    
+    width: 3vw;
+    border: 1px solid lightgray;
+    border-radius: 8px;
 }
 .exp_date_cvv{
     display: flex;
     column-gap: 20px;
-    
 }
