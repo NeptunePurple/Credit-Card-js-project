@@ -29,10 +29,11 @@ formnumber.addEventListener('keyup',function(event){
         // const errormsg = document.createElement('p');
         // errormsg.innerText = 'Number daalo bhai';
         // formnumber.append(errormsg);
-        console.error("Character Not Allowed");
+        // console.error("Character Not Allowed");
         if(errorNumber.classList.contains("hidden")) errorNumber.classList.remove("hidden");
     }else{
         if(!errorNumber.classList.contains("hidden")) errorNumber.classList.add("hidden");
+        12345678 => str[0:4]+" "+5678+" "
     }
 
 }
