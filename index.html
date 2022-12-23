@@ -95,7 +95,8 @@
  
           <label for="card_number">CARD NUMBER</label>
           <br/>
-          <input  type="text" inputmode="numeric" class="info form-card-number" id="card_number" placeholder="e.g. 1234 5678 9123 0000"/>
+          <input  type="text" minlength="0" maxlength="16" class="info form-card-number" id="card_number" placeholder="e.g. 1234 5678 9123 0000"/>
+          <p class="hidden" id="errorCardNumber"></p>
           <br/>
 
           <div class="exp_date_cvv">

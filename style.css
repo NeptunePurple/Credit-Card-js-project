@@ -143,3 +143,6 @@ body {
     color: white;
     margin-top: 3vh;
 }
+.hidden{
+    display: none;
+}
