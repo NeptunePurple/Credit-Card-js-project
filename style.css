@@ -2,7 +2,7 @@
     font-family: 'Space Grotesk';
     letter-spacing: .1vw;
     /* font-weight: 500; */
-    border: .1px solid red;
+    border: .1px solid blueviolet;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -16,8 +16,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
-
 
 body {
     margin: 0px;
@@ -88,7 +86,7 @@ body {
     display: inline-block;
     color: white;
     top: 12.5vw;
-    left: 23vw;
+    left: 23.9vw;
     font-size: 0.95vw;
 }
 
@@ -226,6 +224,7 @@ body {
     #credit-front-image, #credit-back-image{
         left:100px;
         /* width: 300px; */
+        
     }
     
 
@@ -236,6 +235,7 @@ body {
     #global-parent{
         display: flex;
         flex-direction: column;
+    
     
     }
      #credit-front-image, #credit-back-image{
@@ -262,11 +262,28 @@ body {
 
 
 /* next page message--------> */
+#Confirm_page{
+    width: 30vw;
+}
 #Confirm_icon{
     position: absolute;
-    top: 35vh;
+    top: 33vh;
     left: 130vh;
-
 }
 
-#msg
+#msg{
+    position: absolute;
+    top: 45vh;
+    left: 125vh;
+    width: 100%
+}
+
+#text_msg{
+    position: absolute;
+    width: 100%;
+    top: 55vh;
+    left: 120vh;
+    color: gray;
+    font-weight: bold;
+
+}
