@@ -2,8 +2,23 @@
     font-family: 'Space Grotesk';
     letter-spacing: .1vw;
     /* font-weight: 500; */
-    /* border: 1px solid red; */
+    border: .1px solid red;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
 body {
     margin: 0px;
     padding: 0px;
@@ -59,12 +74,21 @@ body {
     display: inline-block;
     text-transform: uppercase;
 }
-#date{
+#month{
     position: absolute;
     display: inline-block;
     color: white;
     top: 12.5vw;
     left: 22vw;
+    font-size: 0.95vw;
+}
+
+#year{
+    position: absolute;
+    display: inline-block;
+    color: white;
+    top: 12.5vw;
+    left: 24vw;
     font-size: 0.95vw;
 }
 
@@ -117,6 +141,12 @@ body {
     border-radius: 8px;
     padding-left: 15px;
 }
+.exp_date_mm_yy{
+    width: 100%;
+}
+.cvv_details_sec{
+    width: 100%;
+}
 .exp_date_cvv{
     display: flex;
     width: 100%;
@@ -143,6 +173,83 @@ body {
     color: white;
     margin-top: 3vh;
 }
+.cvv_details,
+.exp_date_mm,
+.exp_date_yy{
+    margin-bottom: 5px;
+}
+.cvv_details_sec p{
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+.exp_date_mm_yy p{
+    word-wrap: break-word;
+    color: red;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+.exp_date_mm_yy .hiddenyy{
+    padding-left: 55%;
+}
+
+
+
+
+
+/* js supporting code DONT MODIFY - BY RAHUL */
 .hidden{
     display: none;
 }
+.hiddenmm{
+    /* display: none; */
+}
+/* Ending here */
+
+
+
+
+@media screen and (max-width:1440px){
+
+    #credit-front-image, #credit-back-image{
+        left:100px;
+        /* width: 300px; */
+    }
+    
+
+
+} 
+@media screen and (min-width: 300px) and (max-width: 832px){
+    
+    #global-parent{
+        display: flex;
+        flex-direction: column;
+    
+    }
+     #credit-front-image, #credit-back-image{
+        width:280px;
+
+    }
+    #gradient-image{
+        width: 100%;
+        min-height: 30vh;
+
+    }
+    
+
+}
+    
+/* @media screen and (max-width:){
+    body{
+        flex-direction: column;
+    }
+
+} */
+
+
+
+
+/* next page message--------> */
+
