@@ -33,17 +33,19 @@ formnumber.addEventListener('keyup',function(event){
         if(errorNumber.classList.contains("hidden")) errorNumber.classList.remove("hidden");
     }else{
         if(!errorNumber.classList.contains("hidden")) errorNumber.classList.add("hidden");
-        cardnumber.innerText = event.target.value;
-        // let left = 0;
-        // let right = 3;
-        // let length = event.target.value.length;
-        // let string = event.target.value;
-        // let newstring ='';
-        // while(right<=length)
-        // {
-        //     newstring +=string.slice(left, right)+" ";
-        // }
-        // cardnumber.innerText = newstring;
+        // cardnumber.innerText = event.target.value;
+        let left = 0;
+        let right = 4;
+        let length = event.target.value.length;
+        let string = event.target.value;
+        let newstring ='';
+        while(right<=16)
+        {
+            newstring +=string.slice(left, right)+" ";
+            left+=4;
+            right+=4;
+        }
+        cardnumber.innerText = newstring;
     }
 }
     // if(String(Number(str)) == 'NaN'){
