@@ -233,13 +233,12 @@ body {
     display: none;
     position: absolute;
     width: 60vh;
-
     top: 35vh;
     left: 110vh;
 
 }
 
-.sk_Confirm_page{
+.Thankyou_page{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -266,18 +265,7 @@ body {
 
 
 
-@media screen and (max-width:1440px) {
 
-    #credit-front-image,
-    #credit-back-image {
-        left: 100px;
-        /* width: 300px; */
-
-    }
-
-
-
-}
 /* @media screen and (max-width:){
     body{
         flex-direction: column;
@@ -285,13 +273,16 @@ body {
 
 } */
 
-@media screen and (min-width: 300px) and (max-width: 900px) {
-    body{
-        display: flex;
-        flex-direction: row;
-        
-    }
-
+/* @media screen and (max-width: 1000px) {
+    /* #global-parent {
+            position: relative;
+    } */
+        /* #background-left {
+            margin-left: 0px;
+            margin-top: 0px;
+            position: relative;
+        } */
+    
     /* #global-parent {
         display: flex;
         flex-direction: column;
@@ -312,4 +303,4 @@ body {
     } */
 
 
-}
+ 

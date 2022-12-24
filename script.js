@@ -116,6 +116,7 @@ mmElement.addEventListener('keyup',function(event){
     }
 })
 
+
 const yyElement = document.getElementById('exp_year');
 yyElement.addEventListener('keyup',function(event){
     const yyElementval = Number(event.target.value);
@@ -178,4 +179,34 @@ cvvnumber.addEventListener('keyup', function(event){
         cvv.innerText='000';
      }
 })
+
+
+// hides form & shows the thankyou screen
+const formWindow = document.getElementById('info-back');
+const thankYouWindow = document.getElementById('Confirm_page');
+
+const confirm_button_ele = document.getElementById("confirm_button");
+
+confirm_button_ele.addEventListener('click',function(e){
+
+    // if(cardholder_name != "" && card_number != "" && exp_month != "" && exp_year != "" && form_cvv != "" ){
+    //      alert(Confirm);   
+    // }
+    // else{
+
+    // }
+
+    e.preventDefault(); // <---- Stops Reloading(happens only when form is submitted)
+    formWindow.style.display = 'none';
+    thankYouWindow.style.display = 'block';
+    console.log('confirm button is clicked');
+})
+
+const continue_button_ele = document.getElementById("Continue_btn");
+continue_button_ele.addEventListener('click',function(e){
+    formWindow.style.display = 'block';
+    thankYouWindow.style.display = 'none';
+})
+
+
 
