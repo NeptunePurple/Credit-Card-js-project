@@ -2,7 +2,7 @@
     font-family: 'Space Grotesk';
     letter-spacing: .1vw;
     /* font-weight: 500; */
-    border: .1px solid blueviolet;
+    /* border: .1px solid blueviolet; */
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -217,40 +217,6 @@ body {
 /* Ending here */
 
 
-
-
-@media screen and (max-width:1440px){
-
-    #credit-front-image, #credit-back-image{
-        left:100px;
-        /* width: 300px; */
-        
-    }
-    
-
-
-} 
-@media screen and (min-width: 300px) and (max-width: 832px){
-    
-    #global-parent{
-        display: flex;
-        flex-direction: column;
-    
-    
-    }
-     #credit-front-image, #credit-back-image{
-        width:280px;
-
-    }
-    #gradient-image{
-        width: 100%;
-        min-height: 30vh;
-
-    }
-    
-
-}
-    
 /* @media screen and (max-width:){
     body{
         flex-direction: column;
@@ -262,28 +228,88 @@ body {
 
 
 /* next page message--------> */
+
 #Confirm_page{
-    width: 30vw;
-}
-#Confirm_icon{
+    display: none;
     position: absolute;
-    top: 33vh;
-    left: 130vh;
+    width: 60vh;
+
+    top: 35vh;
+    left: 110vh;
+
 }
 
-#msg{
-    position: absolute;
-    top: 45vh;
-    left: 125vh;
-    width: 100%
+.sk_Confirm_page{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+    row-gap: 5px;
 }
 
 #text_msg{
-    position: absolute;
-    width: 100%;
-    top: 55vh;
-    left: 120vh;
     color: gray;
     font-weight: bold;
+
+}
+#Continue_btn{
+    height: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    background-color: rgb(33, 9, 47);
+    color: white;
+    width: 50vh;
+    margin-top: 4vh;
+
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+
+    #credit-front-image,
+    #credit-back-image {
+        left: 100px;
+        /* width: 300px; */
+
+    }
+
+
+
+}
+/* @media screen and (max-width:){
+    body{
+        flex-direction: column;
+    }
+
+} */
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    body{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    /* #global-parent {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    #credit-front-image,
+    #credit-back-image {
+        width: 280px;
+
+    }
+
+    #gradient-image {
+        width: 100%;
+        min-height: 30vh;
+
+    } */
+
 
 }
