@@ -150,6 +150,8 @@ body {
     width: 100%;
     gap: 0.5rem;
 }
+
+
 #errorCardNumber{
     color: red;
     margin: 0;
@@ -224,7 +226,13 @@ body {
 
 } */
 
-
+/* Footer text...... */
+#footer_text{
+    position: absolute;
+    width: 110%;
+    top: 50vh;
+    font-size: smaller;
+}
 
 
 /* next page message--------> */
@@ -261,46 +269,110 @@ body {
     margin-top: 4vh;
 
 }
-
-
-
-
-
-/* @media screen and (max-width:){
-    body{
-        flex-direction: column;
+@media screen and (max-width: 480px) {
+    #credit-front {
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 20px;
+        width: 220px;
+        z-index: 1;
     }
 
-} */
+    #background-left img {
+        width: 100vw;
+        height: 40vh;
+    }
 
-/* @media screen and (max-width: 1000px) {
-    /* #global-parent {
-            position: relative;
-    } */
-        /* #background-left {
-            margin-left: 0px;
-            margin-top: 0px;
-            position: relative;
-        } */
-    
-    /* #global-parent {
+    #credit-front-image {
+        width: 220px;
+    }
+
+    #logo {
+        height: 25px;
+        top: 15px;
+        left: 10px;
+    }
+
+    #number {
+        font-size: 24px;
+        top: 80px;
+        left: 10px;
+    }
+
+    #name {
+        top: 139px;
+        left: 10px;
+        font-size: 11px;
+    }
+
+    #month {
+        top: 139px;
+        left: 250px;
+        font-size: 11px;
+    }
+
+    #year {
+        top: 139px;
+        left: 272px;
+        font-size: 11px;
+    }
+
+    /* ----------card-back----------- */
+    #credit-back {
+        margin-top: 100px;
+        margin-left: 0;
         display: flex;
-        flex-direction: column;
-
-
+        justify-content: center;
     }
 
-    #credit-front-image,
     #credit-back-image {
-        width: 280px;
-
+        width: 200px;
     }
 
-    #gradient-image {
-        width: 100%;
-        min-height: 30vh;
+    .credit-back-image_cvv {
+        left: 250px;
+        top: 76px;
+    }
 
-    } */
+    #info-back {
+        margin-top: 390px;
+        position: relative;
+        top: 0;
+        left: 15%;
+        
+    }
+    .info-card {
+            width: 75vw;
+        }
+}
+
+
+
+
+
+
 
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and(max-width:768px){
+    #
+} */
