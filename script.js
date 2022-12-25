@@ -1,6 +1,17 @@
 //card name copied to the card from form element
 const formname = document.getElementById('cardholder_name');
 const cardname = document.getElementById('name');
+const formnumber = document.getElementById('card_number');
+const cardnumber = document.getElementById('number');
+const mmElement = document.getElementById('exp_month');
+const yyElement = document.getElementById('exp_year');
+const cvvElement = document.getElementById('form_cvv');
+const formWindow = document.getElementById('info-back');
+const thankYouWindow = document.getElementById('Confirm_page');
+const confirm_button_ele = document.getElementById("confirm_button");
+const continue_button_ele = document.getElementById("Continue_btn");
+
+
 formname.addEventListener('keyup',function(event){
     // event.target.value==="" ?
     cardname.innerText = event.target.value;
@@ -9,8 +20,6 @@ formname.addEventListener('keyup',function(event){
 
 
 // Card number error message issue
-const formnumber = document.getElementById('card_number');
-const cardnumber = document.getElementById('number');
 formnumber.addEventListener('keyup',function(event){
     // if(e.target.value.length)
     //pure string ko check karna padega bhai, user backspace karke sahi daal dega to bhi dikkat aayegi(Lmao)
@@ -103,7 +112,7 @@ formnumber.addEventListener('keyup',function(event){
 //     }
 // })
 
-const mmElement = document.getElementById('exp_month');
+
 mmElement.addEventListener('keyup',function(event){
     const mmElementval = Number(event.target.value);
     const messageaftermm = document.getElementById("errorMonth");
@@ -117,7 +126,7 @@ mmElement.addEventListener('keyup',function(event){
 })
 
 
-const yyElement = document.getElementById('exp_year');
+
 yyElement.addEventListener('keyup',function(event){
     const yyElementval = Number(event.target.value);
     const messageafteryy = document.getElementById("errorYear");
@@ -130,7 +139,7 @@ yyElement.addEventListener('keyup',function(event){
     }
 })
 
-const cvvElement = document.getElementById('form_cvv');
+
 cvvElement.addEventListener('keyup',function(event){
     const cvvElementval = Number(event.target.value);
     const messageaftercvv = document.getElementById("errorCvv");
@@ -182,31 +191,26 @@ cvvnumber.addEventListener('keyup', function(event){
 
 
 // hides form & shows the thankyou screen
-const formWindow = document.getElementById('info-back');
-const thankYouWindow = document.getElementById('Confirm_page');
 
-const confirm_button_ele = document.getElementById("confirm_button");
+
+
 
 confirm_button_ele.addEventListener('click',function(e){
-
-    // if(cardholder_name != "" && card_number != "" && exp_month != "" && exp_year != "" && form_cvv != "" ){
-    //      alert(Confirm);   
-    // }
-    // else{
-
-    // }
-
     e.preventDefault(); // <---- Stops Reloading(happens only when form is submitted)
+
+    if(formname.value == "" || formnumber.value == "" || mmElement.value == "" || yyElement.value == "" || cvvElement.value == "" ){
+        console.log('Please fill out all the fields correctly');
+        alert("Confirm");   
+    }
+    else{
     formWindow.style.display = 'none';
     thankYouWindow.style.display = 'block';
     console.log('confirm button is clicked');
+    }
 })
 
-const continue_button_ele = document.getElementById("Continue_btn");
+
 continue_button_ele.addEventListener('click',function(e){
     formWindow.style.display = 'block';
     thankYouWindow.style.display = 'none';
 })
-
-
-
