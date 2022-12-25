@@ -199,8 +199,8 @@ confirm_button_ele.addEventListener('click',function(e){
     e.preventDefault(); // <---- Stops Reloading(happens only when form is submitted)
 
     if(formname.value == "" || formnumber.value == "" || mmElement.value == "" || yyElement.value == "" || cvvElement.value == "" ){
-        console.log('Please fill out all the fields correctly');
-        alert("Confirm");   
+//         console.log('Please fill out all the fields correctly');
+        alert("Please fill out all the fields correctly");   
     }
     else{
     formWindow.style.display = 'none';
